@@ -34,7 +34,7 @@ let getData = (id) =>{
 				}
 		},
 		error: (err) => {
-			console.log(err.responseJSON.error.message)
+			console.log("err.responseJSON.error.message")
 			alert("Sometihng wrong occured")
 		} 
 	})
