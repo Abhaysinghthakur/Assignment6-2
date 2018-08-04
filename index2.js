@@ -3,7 +3,7 @@ let getDataByTitle = (title,year) =>{
 		type: 'GET',
 		dataType: 'json',
 		async: true,
-		url:`http://www.omdbapi.com/?s=${title}&y=${year}&apikey=cd8ee319`,
+		url:`https://www.omdbapi.com/?s=${title}&y=${year}&apikey=cd8ee319`,
 
 		success: (response) => {
 				if(response.Response == "True"){

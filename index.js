@@ -3,7 +3,7 @@ let getData = (id) =>{
 		type: 'GET',
 		dataType: 'json',
 		async: true,
-		url:`http://www.omdbapi.com/?i=tt${id}&apikey=cd8ee319`,
+		url:`https://www.omdbapi.com/?i=tt${id}&apikey=cd8ee319`,
 
 		success: (response) => {
 				if(response.Response == "True"){
