@@ -44,18 +44,15 @@ let getData = (id) =>{
 
 $(document).ready(() =>{
 
-	$('#search').click(() =>{
-        var value = Number($('input[name=radio-1]:checked').val()); 
-        if(value === 1){
-        	$(".title").show("5000");
-        	$(".imdb").hide("5000");
-        }else if(value == 2){
-        	$(".title").hide("5000");
-        	$(".imdb").show("5000");
-        }else{
-        	alert("select from the radio button, \n what to use while finding movie data")
-        }
-    });
+    $("#byTitle").click(() =>{
+    	$(".title").show("5000");
+        $(".imdb").hide("5000");
+    })
+ 
+ 	$("#byId").click(() =>{
+    	$(".title").hide("5000");
+        $(".imdb").show("5000");
+    })
 
     $("#search1").click(() =>{
     	if($("#imdbId").val() != undefined || $("#imdbId").val() != "" || !isNaN(Number($("#imdbId").val()))){
